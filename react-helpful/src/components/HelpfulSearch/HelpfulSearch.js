@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function HelpfulSearch(props) {
 	const [search, setSearch] = useState('');
-
+	let navigate = useNavigate();
 	const searchParams = {
 		total_results: 1,
 		query: null,
@@ -11,19 +12,17 @@ function HelpfulSearch(props) {
 		// endpoint: '-search',
 	};
 
-	// useEffect(() => {
-	// 	beHelpful();
-	// }, []);
+	useEffect(() => {
+		props.setResult(null);
+	}, []);
 	function beHelpful() {
-		// const search = '';
-
 		const url = `${searchParams.api}${search}`;
 
 		fetch(url)
 			.then((res) => res.json())
 			.then((json) => {
-				setSearch(json);
-				console.log(json);
+				props.setResult(json);
+				navigate('/results');
 			})
 			.catch((err) => {
 				console.log(err);
@@ -38,20 +37,27 @@ function HelpfulSearch(props) {
 	function handleChange(event) {
 		setSearch(event.target.value);
 	}
-
+	// if (!search) {
+	// 	return <h2>Limit search to key words</h2>;
+	// } else {
 	return (
-		<form onSubmit={handleSubmit} className='helpful-form'>
-			<input
-				placeholder='keyword'
-				type='text'
-				name='search'
-				required
-				onChange={handleChange}
-				value={search}
-			/>
-			<button type='submit'>Get Help</button>
-		</form>
+		<main className='container'>
+			<form onSubmit={handleSubmit} className='helpful-form'>
+				<input
+					className='input'
+					placeholder='keyword'
+					type='text'
+					name='search'
+					required
+					onChange={handleChange}
+					value={search}
+				/>
+
+				<button type='submit'>Get Help</button>
+			</form>
+		</main>
 	);
 }
+// }
 
 export default HelpfulSearch;
