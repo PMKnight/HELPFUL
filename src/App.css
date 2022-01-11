@@ -8,7 +8,7 @@ body {
 
 .Helpful {
 	text-align: center;
-
+	/* cloud css from https://www.midwinter-dg.com/permalink-7-great-css-based-text-effects-using-the-text-shadow-property_2011-03-03.html */
 	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6),
 		0px 0px 30px rgba(255, 255, 255, 0.4), 0px 0px 50px rgba(255, 255, 255, 0.3),
 		0px 0px 180px rgba(255, 255, 255, 0.3);
