@@ -1,0 +1,14 @@
+.container-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 30px;
+	padding-left: 40px;
+}
+
+.helpful-form {
+	flex-direction: row;
+	flex-basis: 30%;
+	align-items: stretch;
+	justify-content: space-between;
+}
