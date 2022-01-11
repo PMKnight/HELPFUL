@@ -12,7 +12,7 @@ function App() {
 
 	const [result, setResult] = useState(null);
 	return (
-		<main className='content'>
+		<main className='content-app'>
 			<h1 className='Helpful'>Helpful</h1>
 			<Routes>
 				<Route

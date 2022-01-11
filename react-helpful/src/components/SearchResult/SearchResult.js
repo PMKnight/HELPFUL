@@ -7,11 +7,11 @@ const SearchResult = ({ random, result }) => {
 		return (
 			<div>
 				<Link to='/'>
-					<button>Back Home</button>
+					<button className='button'>Back Home</button>
 				</Link>
 				<ul>
 					{result.slips.map((results) => {
-						return <li>{results.advice}</li>;
+						return <li className='search-list'>{results.advice}</li>;
 					})}
 				</ul>
 			</div>
@@ -23,7 +23,7 @@ const SearchResult = ({ random, result }) => {
 			<Link to='/'>
 				<button>Back Home</button>
 			</Link>
-			<h2>{random.slip.advice}</h2>
+			<h2 className='random'>{random.slip.advice}</h2>
 		</div>
 	);
 };

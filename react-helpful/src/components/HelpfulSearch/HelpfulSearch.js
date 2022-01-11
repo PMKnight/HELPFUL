@@ -41,7 +41,7 @@ function HelpfulSearch(props) {
 	// 	return <h2>Limit search to key words</h2>;
 	// } else {
 	return (
-		<main className='container'>
+		<main className='container-main'>
 			<form onSubmit={handleSubmit} className='helpful-form'>
 				<input
 					className='input'
