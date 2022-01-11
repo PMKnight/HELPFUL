@@ -3,15 +3,14 @@ import { Link } from 'react-router-dom';
 
 const SearchResult = ({ random, result }) => {
 	if (result) {
-		console.log(result);
 		return (
-			<div>
+			<div className='results'>
 				<Link to='/'>
 					<button className='button'>Back Home</button>
 				</Link>
-				<ul>
+				<ul className='list-items'>
 					{result.slips.map((results) => {
-						return <li className='search-list'>{results.advice}</li>;
+						return <li key={results.slip_id}>{results.advice}</li>;
 					})}
 				</ul>
 			</div>

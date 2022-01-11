@@ -1,12 +1,17 @@
-.button {
+.results {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px solid yellow;
 }
 
-.search-list {
-	text-decoration: none;
+.list-items {
+	list-style-type: none;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	color: whitesmoke;
 	text-shadow: green;
 }
 
 .random {
+	flex-basis: 10px;
 }

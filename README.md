@@ -2,6 +2,31 @@
 
 Sharing bits of wisdom
 
+## Description
+
+HELPFUL is an advice website. The goal is to deliver help to the overthinkers when necessary. Also serving as a fun app to see what counsel can be offered. There is a search box and randomized button to assist in finding the advice desired.
+
+## Planning Process
+
+## User Stories
+
+- As a User, I want to be able to click a button and return random strings of advice.
+- As a User, I want to input keywords to return advice.
+- As a User, I want to the app to store messages given and return new advice.
+
+### MVP Goals
+
+### Stretch Goals
+
+### Wireframes
+
+#### Main View
+
+![Alt text](src/components/Helpful/wireframefront.png)
+![HELPFUL initial screen](src/components/Helpful/wireframefront.png, src/components/Helpful/Assets/wireframeback.png)
+
+#### About Modal
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

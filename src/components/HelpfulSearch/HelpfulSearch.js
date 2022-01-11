@@ -53,7 +53,9 @@ function HelpfulSearch(props) {
 					value={search}
 				/>
 
-				<button type='submit'>Get Help</button>
+				<button className='get-help' type='submit'>
+					Get Help
+				</button>
 			</form>
 		</main>
 	);

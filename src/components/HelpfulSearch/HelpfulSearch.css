@@ -12,3 +12,7 @@
 	align-items: stretch;
 	justify-content: space-between;
 }
+
+.get-help {
+	size: 10px auto;
+}
