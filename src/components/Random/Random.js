@@ -24,7 +24,9 @@ function Random(props) {
 	}
 	return (
 		<div>
-			<button onClick={getRandom}>Random Text</button>
+			<button className='random-button' onClick={getRandom}>
+				Random Advice
+			</button>
 		</div>
 	);
 }

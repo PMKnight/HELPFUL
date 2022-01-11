@@ -1,13 +1,56 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 20px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.container-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 30px;
+	border: black;
+}
+
+.helpful-form {
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.get-help {
+	size: 10px auto;
+}
+
+.list-items {
+	list-style-type: none;
+	font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+	font-size: 30px;
+	border-style: yellow;
+	color: whitesmoke;
+	text-shadow: green;
+}
+
+.random-button {
+	color: yellow;
+	background-color: transparent;
+	font-size: 130%;
+	font-weight: bolder;
+
+	margin-top: 150px;
+	margin-left: 75px;
+	height: 60px;
+	width: 200px;
+	border-radius: 20px;
+}
+
+.random-button:hover {
+	background-color: green;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }
